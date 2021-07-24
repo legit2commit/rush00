@@ -1,9 +1,10 @@
 #include <unistd.h>
 
 void	ft_putchar(char c);
-void	rush(int x, int y);	
+void	rush(int x, int y);
+
 int	main(void)
 {
-	rush(5,3);
+	rush (10, 50);
 	return (0);
 }

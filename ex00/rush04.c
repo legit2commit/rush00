@@ -2,6 +2,7 @@ void	ft_putchar(char c);
 void	ft_top_bottom_len(int x_length)
 {
 	int	length;
+
 	length = 1;
 	while (length <= x_length)
 	{
@@ -24,7 +25,8 @@ void	ft_top_bottom_len(int x_length)
 
 void	ft_middle_len(int x)
 {
-	int width;
+	int	width;
+
 	width = 1;
 	while (width <= x)
 	{
@@ -47,14 +49,16 @@ void	ft_middle_len(int x)
 
 void	ft_last_len(int x_length)
 {
-	int length = 1;
-	while(length <= x_length)
+	int	length;
+
+	length = 1;
+	while (length <= x_length)
 	{
-		if(length == 1)
+		if (length == 1)
 		{
 			ft_putchar('C');
 		}
-		else if(length == x_length)
+		else if (length == x_length)
 		{
 			ft_putchar('A');
 		}
@@ -67,10 +71,10 @@ void	ft_last_len(int x_length)
 	ft_putchar('\n');
 }
 
-
 void	rush(int x, int y)
 {
-	int len_width;
+	int	len_width;
+
 	len_width = 1;
 	while (len_width <= y)
 	{
@@ -78,7 +82,7 @@ void	rush(int x, int y)
 		{
 			ft_top_bottom_len(x);
 		}
-		else if(len_width == y) 
+		else if (len_width == y)
 		{
 			ft_last_len(x);
 		}
